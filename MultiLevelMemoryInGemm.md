@@ -1,6 +1,6 @@
 # GEMM中的多层存储
 
-GEMM (General Matrix Multiply) 即 $C \leftarrow C + AB$。下文默认 $A$、$B$、$C$ 都是 $n \times n$ 的 float32 矩阵 (每个元素 4 Byte)，一次 GEMM 共 $2n^3$ 次浮点运算 (FLOPs)。
+GEMM (General Matrix Multiply) 即 $C \leftarrow C + AB$。下文默认 $A$、 $B$、 $C$ 都是 $n \times n$ 的 float32 矩阵 (每个元素 4 Byte)，一次 GEMM 共 $2n^3$ 次浮点运算 (FLOPs)。
 
 ## 1. 计算强度
 
@@ -38,9 +38,9 @@ for (i = 0; i < n; i++)
 
 每算一个 $C_{ij}$ 都要扫过 $A$ 的一整行和 $B$ 的一整列。当矩阵远大于 cache 时，这些数据在下次用到之前早已被换出，于是每次乘加的操作数都要重新从内存读取：
 
-- 运算量：$2n^3$ FLOPs
+- 运算量： $2n^3$ FLOPs
 - 搬运量：约 $2n^3$ 个元素，即 $8n^3$ Byte
-- 计算强度：约 $0.25$ FLOPs/Byte，与 $n$ 无关
+- 计算强度：约 $0.25$ FLOPs/Byte，与 $n$ 无关·
 
 (实际运行时 $A$ 的当前行可能留在 cache 里，但 $B$ 的每一列都要重读，量级不变。)
 
