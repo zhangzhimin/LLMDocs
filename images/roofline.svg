@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440"
+     font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif" font-size="12">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="440" fill="#FFFFFF"/>
+
+  <!-- 两个区域 -->
+  <rect x="100" y="50" width="360" height="290" fill="#FFF3E0"/>
+  <rect x="460" y="50" width="280" height="290" fill="#E3F2FD"/>
+
+  <!-- 网格 -->
+  <g stroke="#D1D5DB" stroke-width="1">
+    <line x1="220" y1="50" x2="220" y2="340"/>
+    <line x1="340" y1="50" x2="340" y2="340"/>
+    <line x1="580" y1="50" x2="580" y2="340"/>
+    <line x1="700" y1="50" x2="700" y2="340"/>
+    <line x1="100" y1="260" x2="740" y2="260"/>
+    <line x1="100" y1="180" x2="740" y2="180"/>
+    <line x1="100" y1="100" x2="740" y2="100"/>
+  </g>
+
+  <!-- 拐点 -->
+  <line x1="460" y1="50" x2="460" y2="340" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="468" y="330" fill="#4B5563">拐点 I* = 峰值算力 / 带宽 = 10</text>
+
+  <!-- 坐标轴 -->
+  <g stroke="#111827" stroke-width="1.5">
+    <line x1="100" y1="340" x2="740" y2="340"/>
+    <line x1="100" y1="50" x2="100" y2="340"/>
+  </g>
+
+  <!-- X 轴刻度 -->
+  <g fill="#374151" text-anchor="middle">
+    <text x="100" y="358">0.01</text>
+    <text x="220" y="358">0.1</text>
+    <text x="340" y="358">1</text>
+    <text x="460" y="358">10</text>
+    <text x="580" y="358">100</text>
+    <text x="700" y="358">1000</text>
+  </g>
+  <text x="420" y="386" text-anchor="middle" font-size="14" fill="#111827">计算强度 I (FLOPs / Byte)</text>
+
+  <!-- Y 轴刻度 -->
+  <g fill="#374151" text-anchor="end">
+    <text x="92" y="344">1 G</text>
+    <text x="92" y="264">10 G</text>
+    <text x="92" y="184">100 G</text>
+    <text x="92" y="104">1 T</text>
+  </g>
+  <text x="34" y="195" text-anchor="middle" font-size="14" fill="#111827" transform="rotate(-90 34 195)">可达性能 (FLOPS)</text>
+
+  <!-- 区域标注 -->
+  <text x="112" y="72" font-size="14" font-weight="bold" fill="#B45309">内存受限</text>
+  <text x="112" y="90" fill="#B45309">性能 = 带宽 × I</text>
+  <text x="600" y="72" font-size="14" font-weight="bold" fill="#1D4ED8" text-anchor="middle">计算受限</text>
+  <text x="600" y="90" fill="#1D4ED8" text-anchor="middle">性能 = 峰值算力</text>
+
+  <!-- Roofline -->
+  <polyline points="100,340 460,100 740,100" fill="none" stroke="#111827" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- 朴素 -> 分块 -->
+  <path d="M 279 223 Q 500 215 551 109" fill="none" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+  <text x="478" y="212" fill="#4B5563">分块: I 提高 b 倍</text>
+
+  <!-- 朴素 GEMM -->
+  <circle cx="267.8" cy="228.2" r="6" fill="#D32F2F" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="282" y="262" font-size="13" font-weight="bold" fill="#B71C1C">朴素 GEMM</text>
+  <text x="282" y="279" fill="#B71C1C">I = 0.25 → 25 GFLOPS</text>
+  <text x="282" y="295" fill="#B71C1C">仅为峰值的 2.5%</text>
+
+  <!-- 分块 GEMM -->
+  <circle cx="556.7" cy="100" r="6" fill="#2E7D32" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="572" y="128" font-size="13" font-weight="bold" fill="#1B5E20">分块 GEMM (b = 256)</text>
+  <text x="572" y="145" fill="#1B5E20">I = 64 → 1 TFLOPS, 跑满</text>
+
+  <text x="420" y="420" text-anchor="middle" fill="#6B7280">示例机器: 峰值算力 1 TFLOPS, 存储带宽 100 GB/s; 数据为 float32, 坐标轴为对数刻度</text>
+</svg>

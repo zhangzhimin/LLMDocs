@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440"
+     font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif" font-size="12">
+  <defs>
+    <marker id="arrow-cap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B45309"/>
+    </marker>
+    <marker id="arrow-speed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1D4ED8"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="440" fill="#FFFFFF"/>
+
+  <!-- 倒金字塔: 自上而下 SSD / DDR / HBM / SRAM / Register -->
+  <g stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round">
+    <polygon points="170,50 630,50 594,110 206,110" fill="#E3F2FD"/>
+    <polygon points="206,110 594,110 558,170 242,170" fill="#BBDEFB"/>
+    <polygon points="242,170 558,170 522,230 278,230" fill="#90CAF9"/>
+    <polygon points="278,230 522,230 486,290 314,290" fill="#64B5F6"/>
+    <polygon points="314,290 486,290 450,350 350,350" fill="#1565C0"/>
+  </g>
+
+  <!-- 层名 -->
+  <g text-anchor="middle" fill="#0D47A1">
+    <text x="400" y="77" font-size="15" font-weight="bold">SSD</text>
+    <text x="400" y="96">固态硬盘: 模型文件、数据集</text>
+
+    <text x="400" y="137" font-size="15" font-weight="bold">DDR</text>
+    <text x="400" y="156">主机内存</text>
+
+    <text x="400" y="197" font-size="15" font-weight="bold">HBM</text>
+    <text x="400" y="216">显存</text>
+
+    <text x="400" y="257" font-size="15" font-weight="bold">SRAM</text>
+    <text x="400" y="276">Cache (L1 / L2 / L3)</text>
+  </g>
+  <g text-anchor="middle" fill="#FFFFFF">
+    <text x="400" y="316" font-size="15" font-weight="bold">Register</text>
+    <text x="400" y="335">寄存器</text>
+  </g>
+
+  <!-- 计算单元 -->
+  <rect x="350" y="360" width="100" height="26" rx="4" fill="#111827"/>
+  <text x="400" y="378" text-anchor="middle" fill="#FFFFFF" font-weight="bold">计算单元</text>
+
+  <!-- 左侧: 容量 -->
+  <g text-anchor="end" fill="#B45309">
+    <text x="174" y="84">TB 级以上</text>
+    <text x="210" y="144">数百 GB ~ TB 级</text>
+    <text x="246" y="204">几十 ~ 上百 GB</text>
+    <text x="282" y="264">几十 KB ~ 几十 MB</text>
+    <text x="318" y="324">KB 级</text>
+  </g>
+  <line x1="70" y1="350" x2="70" y2="54" stroke="#B45309" stroke-width="1.5" marker-end="url(#arrow-cap)"/>
+  <text x="50" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#B45309" transform="rotate(-90 50 200)">容量: 越上越大</text>
+
+  <!-- 右侧: 速度 -->
+  <g text-anchor="start" fill="#1D4ED8">
+    <text x="626" y="84">GB/s 级</text>
+    <text x="590" y="144">百 GB/s 级</text>
+    <text x="554" y="204">TB/s 级</text>
+    <text x="518" y="264">ns 级访问</text>
+    <text x="482" y="324">每周期直达计算单元</text>
+  </g>
+  <line x1="730" y1="50" x2="730" y2="346" stroke="#1D4ED8" stroke-width="1.5" marker-end="url(#arrow-speed)"/>
+  <text x="754" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#1D4ED8" transform="rotate(-90 754 200)">速度: 越下越快</text>
+
+  <text x="400" y="420" text-anchor="middle" fill="#6B7280">数字为典型量级, 具体数值因硬件而异</text>
+</svg>
