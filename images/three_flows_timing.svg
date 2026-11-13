@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1115" width="1120" height="1115" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <rect width="1120" height="1115" fill="#ffffff"/>
+  <text x="30" y="32" font-size="16" font-weight="bold" fill="#1f2933">三流时序图：以分块矩阵乘法为例</text>
+  <text x="30" y="52" font-size="12" font-weight="bold" fill="#4a7bd0">① 总览：HBM ⇄ SRAM</text>
+  <rect x="384" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M390,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="470.0" y="34" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <rect x="564" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M570,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="650.0" y="34" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <rect x="744" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M750,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="830.0" y="34" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <line x1="180" y1="96" x2="1090" y2="96" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="135" x2="1090" y2="135" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="365" x2="1090" y2="365" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="250" x2="1090" y2="250" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="15" y="76" width="140" height="44" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="85" y="93" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">数据流</text>
+  <text x="85" y="110" font-size="9" fill="#52606d" text-anchor="middle">DMA：HBM ⇄ SRAM</text>
+  <rect x="15" y="228" width="140" height="44" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="85" y="245" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">控制流</text>
+  <text x="85" y="262" font-size="9" fill="#52606d" text-anchor="middle">调度</text>
+  <rect x="15" y="343" width="140" height="44" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="85" y="360" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">计算流</text>
+  <text x="85" y="377" font-size="9" fill="#52606d" text-anchor="middle">Block</text>
+  <rect x="208" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="247.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A0</text>
+  <text x="247.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="294" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="333.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B0</text>
+  <text x="333.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="388" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="427.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A1</text>
+  <text x="427.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="474" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="513.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B1</text>
+  <text x="513.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="568" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="607.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A2</text>
+  <text x="607.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="654" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="693.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B2</text>
+  <text x="693.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="568" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="650.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C0</text>
+  <text x="650.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→HBM</text>
+  <rect x="748" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="787.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A3</text>
+  <text x="787.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="834" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="873.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B3</text>
+  <text x="873.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="748" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="830.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C1</text>
+  <text x="830.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→HBM</text>
+  <rect x="928" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="967.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A4</text>
+  <text x="967.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="1014" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="1053.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B4</text>
+  <text x="1053.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">HBM→SRAM</text>
+  <rect x="928" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="1010.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C2</text>
+  <text x="1010.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→HBM</text>
+  <rect x="208" y="335" width="164" height="60" rx="6" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="290.0" y="369.0" font-size="11" fill="#52606d" text-anchor="middle">等待 A0,B0</text>
+  <rect x="388" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="470.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A0,B0)</text>
+  <text x="470.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C0→SRAM</text>
+  <rect x="568" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="650.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A1,B1)</text>
+  <text x="650.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C1→SRAM</text>
+  <rect x="564" y="331" width="172" height="68" rx="6" fill="none" stroke="#4a7bd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+<circle cx="740" cy="327" r="11" fill="#ffffff" stroke="#4a7bd0" stroke-width="1.5"/>
+<text x="740" y="331" font-size="13" text-anchor="middle" font-weight="bold" fill="#4a7bd0">+</text>
+  <text x="740" y="310" font-size="10" font-weight="bold" fill="#4a7bd0" text-anchor="middle">放大</text>
+  <rect x="748" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="830.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A2,B2)</text>
+  <text x="830.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C2→SRAM</text>
+  <rect x="928" y="335" width="164" height="60" rx="6" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1010.0" y="369.0" font-size="16" fill="#52606d" text-anchor="middle">⋯</text>
+  <rect x="172" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="200" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="352" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="380" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="532" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="560" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="712" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="740" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="892" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="920" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="1072" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="1100" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <line x1="200" y1="440" x2="1120" y2="440" stroke="#52606d" stroke-width="1.5"/>
+  <line x1="200" y1="436" x2="200" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="200" y="458" font-size="12" fill="#52606d" text-anchor="middle">t0</text>
+  <line x1="380" y1="436" x2="380" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="380" y="458" font-size="12" fill="#52606d" text-anchor="middle">t1</text>
+  <line x1="560" y1="436" x2="560" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="560" y="458" font-size="12" fill="#52606d" text-anchor="middle">t2</text>
+  <line x1="740" y1="436" x2="740" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="740" y="458" font-size="12" fill="#52606d" text-anchor="middle">t3</text>
+  <line x1="920" y1="436" x2="920" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="920" y="458" font-size="12" fill="#52606d" text-anchor="middle">t4</text>
+  <line x1="1100" y1="436" x2="1100" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="1100" y="458" font-size="12" fill="#52606d" text-anchor="middle">t5</text>
+  <text x="40" y="470" font-size="11" fill="#52606d">以三个分块为例，之后以同样模式继续。SRAM 为相邻分块各留一份缓冲。</text>
+  <rect x="2" y="519" width="1116" height="562" rx="6" fill="#f3f7ff"/>
+  <line x1="564" y1="331" x2="8" y2="525" stroke="#4a7bd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="736" y1="331" x2="1112" y2="525" stroke="#4a7bd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="564" y1="399" x2="8" y2="1075" stroke="#4a7bd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="736" y1="399" x2="1112" y2="1075" stroke="#4a7bd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="560" y="505" font-size="14" font-weight="bold" fill="#4a7bd0" text-anchor="middle">② multiply(A1,B1) 的放大：SRAM ⇄ Tile Registers</text>
+  <g transform="translate(0,530)">
+  <rect x="384" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M390,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="470.0" y="50" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <rect x="564" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M570,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="650.0" y="50" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <rect x="744" y="66" width="172" height="334" rx="6" fill="#eef2f6"/>
+  <path d="M750,62 v-6 h160 v6" fill="none" stroke="#52606d" stroke-width="1.5"/>
+  <text x="830.0" y="50" font-size="12" font-weight="bold" fill="#52606d" text-anchor="middle">overlap</text>
+  <line x1="180" y1="96" x2="1090" y2="96" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="135" x2="1090" y2="135" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="365" x2="1090" y2="365" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="180" y1="250" x2="1090" y2="250" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="15" y="76" width="140" height="44" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="85" y="93" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">数据流</text>
+  <text x="85" y="110" font-size="9" fill="#52606d" text-anchor="middle">SRAM ⇄ Tile Registers</text>
+  <rect x="15" y="228" width="140" height="44" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="85" y="245" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">控制流</text>
+  <text x="85" y="262" font-size="9" fill="#52606d" text-anchor="middle">调度</text>
+  <rect x="15" y="343" width="140" height="44" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="85" y="360" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">计算流</text>
+  <text x="85" y="377" font-size="9" fill="#52606d" text-anchor="middle">Block</text>
+  <rect x="208" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="247.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A0</text>
+  <text x="247.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="294" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="333.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B0</text>
+  <text x="333.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="388" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="427.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A1</text>
+  <text x="427.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="474" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="513.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B1</text>
+  <text x="513.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="568" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="607.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A2</text>
+  <text x="607.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="654" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="693.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B2</text>
+  <text x="693.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="568" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="650.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C0</text>
+  <text x="650.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">TileReg→SRAM</text>
+  <rect x="748" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="787.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A3</text>
+  <text x="787.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="834" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="873.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B3</text>
+  <text x="873.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="748" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="830.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C1</text>
+  <text x="830.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">TileReg→SRAM</text>
+  <rect x="928" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="967.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load A4</text>
+  <text x="967.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="1014" y="78" width="78" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="1053.0" y="95.0" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">load B4</text>
+  <text x="1053.0" y="107.0" font-size="8" fill="#52606d" text-anchor="middle">SRAM→TileReg</text>
+  <rect x="928" y="119" width="164" height="36" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="1010.0" y="136.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">store C2</text>
+  <text x="1010.0" y="150.0" font-size="8" fill="#52606d" text-anchor="middle">TileReg→SRAM</text>
+  <rect x="208" y="335" width="164" height="60" rx="6" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="290.0" y="369.0" font-size="11" fill="#52606d" text-anchor="middle">等待 A0,B0</text>
+  <rect x="388" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="470.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A0,B0)</text>
+  <text x="470.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C0→TileReg</text>
+  <rect x="568" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="650.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A1,B1)</text>
+  <text x="650.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C1→TileReg</text>
+  <rect x="748" y="335" width="164" height="60" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="830.0" y="362.0" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">multiply(A2,B2)</text>
+  <text x="830.0" y="378.0" font-size="9" fill="#52606d" text-anchor="middle">C2→TileReg</text>
+  <rect x="928" y="335" width="164" height="60" rx="6" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="1010.0" y="369.0" font-size="16" fill="#52606d" text-anchor="middle">⋯</text>
+  <rect x="172" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="200" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="352" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="380" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="532" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="560" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="712" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="740" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="892" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="920" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <rect x="1072" y="230" width="56" height="40" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="1100" y="255" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">调度</text>
+  <line x1="200" y1="440" x2="1120" y2="440" stroke="#52606d" stroke-width="1.5"/>
+  <line x1="200" y1="436" x2="200" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="200" y="458" font-size="12" fill="#52606d" text-anchor="middle">t0</text>
+  <line x1="380" y1="436" x2="380" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="380" y="458" font-size="12" fill="#52606d" text-anchor="middle">t1</text>
+  <line x1="560" y1="436" x2="560" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="560" y="458" font-size="12" fill="#52606d" text-anchor="middle">t2</text>
+  <line x1="740" y1="436" x2="740" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="740" y="458" font-size="12" fill="#52606d" text-anchor="middle">t3</text>
+  <line x1="920" y1="436" x2="920" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="920" y="458" font-size="12" fill="#52606d" text-anchor="middle">t4</text>
+  <line x1="1100" y1="436" x2="1100" y2="444" stroke="#52606d" stroke-width="1.5"/>
+  <text x="1100" y="458" font-size="12" fill="#52606d" text-anchor="middle">t5</text>
+  </g>
+</svg>

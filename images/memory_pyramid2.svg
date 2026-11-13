@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="860" height="460"
+     font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size="12">
+  <defs>
+    <marker id="arrow-cap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B45309"/>
+    </marker>
+    <marker id="arrow-speed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1D4ED8"/>
+    </marker>
+  </defs>
+
+  <rect width="860" height="460" fill="#FFFFFF"/>
+
+  <!-- 倒金字塔: 集群 / HBM / SRAM / Tile Registers -->
+  <g stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round">
+    <polygon points="156,48 644,48 604,120 196,120" fill="#E3F2FD"/>
+    <polygon points="196,120 604,120 564,192 236,192" fill="#BBDEFB"/>
+    <polygon points="236,192 564,192 524,264 276,264" fill="#64B5F6"/>
+    <polygon points="276,264 524,264 484,336 316,336" fill="#1565C0"/>
+  </g>
+
+  <g text-anchor="middle" fill="#0D47A1">
+    <text x="400" y="80" font-size="16" font-weight="bold">HBM 与 HBM 互联</text>
+    <text x="400" y="102">集群</text>
+    <text x="400" y="162" font-size="16" font-weight="bold">HBM</text>
+    <text x="400" y="234" font-size="16" font-weight="bold">SRAM</text>
+  </g>
+  <text x="400" y="306" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="bold">Tile Registers</text>
+
+  <rect x="328" y="350" width="144" height="28" rx="4" fill="#111827"/>
+  <text x="400" y="369" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">Tensor Core</text>
+
+  <g text-anchor="end" fill="#B45309" font-size="13">
+    <text x="146" y="88">TB 级以上</text>
+    <text x="186" y="160">几十 ~ 上百 GB</text>
+    <text x="226" y="232">几十 KB ~ 几十 MB</text>
+    <text x="266" y="304">KB 级</text>
+  </g>
+  <line x1="52" y1="336" x2="52" y2="48" stroke="#B45309" stroke-width="1.5" marker-end="url(#arrow-cap)"/>
+  <text x="32" y="192" text-anchor="middle" font-size="14" font-weight="bold" fill="#B45309" transform="rotate(-90 32 192)">容量: 越上越大</text>
+
+  <g text-anchor="start" fill="#1D4ED8" font-size="13">
+    <text x="654" y="88">慢于片内 HBM</text>
+    <text x="614" y="160">TB/s 级</text>
+    <text x="574" y="232">ns 级访问</text>
+    <text x="534" y="304">每周期直达 Tensor Core</text>
+  </g>
+  <line x1="800" y1="48" x2="800" y2="336" stroke="#1D4ED8" stroke-width="1.5" marker-end="url(#arrow-speed)"/>
+  <text x="824" y="192" text-anchor="middle" font-size="14" font-weight="bold" fill="#1D4ED8" transform="rotate(-90 824 192)">速度: 越下越快</text>
+
+  <text x="400" y="424" text-anchor="middle" fill="#6B7280">数字为典型量级, 具体数值因硬件而异</text>
+</svg>

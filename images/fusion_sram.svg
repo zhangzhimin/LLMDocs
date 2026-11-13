@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606d"/>
+    </marker>
+  </defs>
+  <rect width="960" height="300" fill="#ffffff"/>
+  <text x="32" y="32" font-size="16" font-weight="bold" fill="#1f2933">SRAM层级融合</text>
+
+  <rect x="24" y="74" width="108" height="200" rx="8" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="78" y="182" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">HBM</text>
+  <rect x="776" y="74" width="148" height="200" rx="8" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="850" y="182" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">HBM</text>
+
+  <rect x="172" y="74" width="560" height="44" rx="7" fill="#fffdf6" stroke="#c99a1c" stroke-width="1.5"/>
+  <rect x="184" y="80" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="212" y="101" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="272" y="80" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="332" y="101" font-size="13" fill="#1f2933" text-anchor="middle">算子 1</text>
+  <rect x="424" y="80" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="452" y="101" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="512" y="80" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="572" y="101" font-size="13" fill="#1f2933" text-anchor="middle">算子 2</text>
+  <rect x="664" y="80" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="692" y="101" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="172" y="126" width="560" height="44" rx="7" fill="#fffdf6" stroke="#c99a1c" stroke-width="1.5"/>
+  <rect x="184" y="132" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="212" y="153" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="272" y="132" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="332" y="153" font-size="13" fill="#1f2933" text-anchor="middle">算子 1</text>
+  <rect x="424" y="132" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="452" y="153" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="512" y="132" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="572" y="153" font-size="13" fill="#1f2933" text-anchor="middle">算子 2</text>
+  <rect x="664" y="132" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="692" y="153" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="172" y="178" width="560" height="44" rx="7" fill="#fffdf6" stroke="#c99a1c" stroke-width="1.5"/>
+  <rect x="184" y="184" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="212" y="205" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="272" y="184" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="332" y="205" font-size="13" fill="#1f2933" text-anchor="middle">算子 1</text>
+  <rect x="424" y="184" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="452" y="205" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="512" y="184" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="572" y="205" font-size="13" fill="#1f2933" text-anchor="middle">算子 2</text>
+  <rect x="664" y="184" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="692" y="205" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="172" y="230" width="560" height="44" rx="7" fill="#fffdf6" stroke="#c99a1c" stroke-width="1.5"/>
+  <rect x="184" y="236" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="212" y="257" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="272" y="236" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="332" y="257" font-size="13" fill="#1f2933" text-anchor="middle">算子 1</text>
+  <rect x="424" y="236" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="452" y="257" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <rect x="512" y="236" width="120" height="32" rx="5" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="572" y="257" font-size="13" fill="#1f2933" text-anchor="middle">算子 2</text>
+  <rect x="664" y="236" width="56" height="32" rx="5" fill="#fff4d6" stroke="#c99a1c"/>
+  <text x="692" y="257" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+
+  <line x1="240" y1="102" x2="266" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="392" y1="102" x2="418" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="102" x2="506" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="632" y1="102" x2="658" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="102" x2="166" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="102" x2="768" y2="102" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="240" y1="154" x2="266" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="392" y1="154" x2="418" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="154" x2="506" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="632" y1="154" x2="658" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="154" x2="166" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="154" x2="768" y2="154" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="240" y1="206" x2="266" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="392" y1="206" x2="418" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="206" x2="506" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="632" y1="206" x2="658" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="206" x2="166" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="206" x2="768" y2="206" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="240" y1="258" x2="266" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="392" y1="258" x2="418" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="258" x2="506" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="632" y1="258" x2="658" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="258" x2="166" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="258" x2="768" y2="258" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

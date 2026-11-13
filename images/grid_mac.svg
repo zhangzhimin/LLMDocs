@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrowA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4a7bd0"/></marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c99a1c"/></marker>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#52606d"/></marker>
+  </defs>
+  <rect width="900" height="530" fill="#ffffff"/>
+  <text x="32" y="34" font-size="16" font-weight="bold" fill="#1f2933">外积 MAC 阵列</text>
+  <text x="200" y="146" font-size="13" fill="#52606d" text-anchor="end">A：每拍送入一列</text>
+  <text x="206" y="100" font-size="13" fill="#52606d" text-anchor="end">B：每拍送入一行</text>
+  <rect x="168" y="155" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="184" y="172" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="132" y="155" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="148" y="172" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="96" y="155" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="112" y="172" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">02</tspan></text>
+  <line x1="201" y1="168" x2="486" y2="168" stroke="#4a7bd0" stroke-width="2"/>
+  <circle cx="294" cy="168" r="3.2" fill="#4a7bd0"/>
+  <line x1="294" y1="168" x2="294" y2="185" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="390" cy="168" r="3.2" fill="#4a7bd0"/>
+  <line x1="390" y1="168" x2="390" y2="185" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="486" cy="168" r="3.2" fill="#4a7bd0"/>
+  <line x1="486" y1="168" x2="486" y2="185" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="168" y="251" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="184" y="268" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="132" y="251" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="148" y="268" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="96" y="251" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="112" y="268" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">12</tspan></text>
+  <line x1="201" y1="264" x2="486" y2="264" stroke="#4a7bd0" stroke-width="2"/>
+  <circle cx="294" cy="264" r="3.2" fill="#4a7bd0"/>
+  <line x1="294" y1="264" x2="294" y2="281" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="390" cy="264" r="3.2" fill="#4a7bd0"/>
+  <line x1="390" y1="264" x2="390" y2="281" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="486" cy="264" r="3.2" fill="#4a7bd0"/>
+  <line x1="486" y1="264" x2="486" y2="281" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="168" y="347" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="184" y="364" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">20</tspan></text>
+  <rect x="132" y="347" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="148" y="364" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">21</tspan></text>
+  <rect x="96" y="347" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="112" y="364" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">22</tspan></text>
+  <line x1="201" y1="360" x2="486" y2="360" stroke="#4a7bd0" stroke-width="2"/>
+  <circle cx="294" cy="360" r="3.2" fill="#4a7bd0"/>
+  <line x1="294" y1="360" x2="294" y2="377" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="390" cy="360" r="3.2" fill="#4a7bd0"/>
+  <line x1="390" y1="360" x2="390" y2="377" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="486" cy="360" r="3.2" fill="#4a7bd0"/>
+  <line x1="486" y1="360" x2="486" y2="377" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="216" y="116" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="232" y="132" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="216" y="88" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="232" y="104" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="216" y="60" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="232" y="76" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">20</tspan></text>
+  <line x1="232" y1="141" x2="232" y2="422" stroke="#c99a1c" stroke-width="2"/>
+  <circle cx="232" cy="230" r="3.2" fill="#c99a1c"/>
+  <line x1="232" y1="230" x2="249" y2="230" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="232" cy="326" r="3.2" fill="#c99a1c"/>
+  <line x1="232" y1="326" x2="249" y2="326" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="232" cy="422" r="3.2" fill="#c99a1c"/>
+  <line x1="232" y1="422" x2="249" y2="422" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="312" y="116" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="328" y="132" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="312" y="88" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="328" y="104" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="312" y="60" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="328" y="76" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">21</tspan></text>
+  <line x1="328" y1="141" x2="328" y2="422" stroke="#c99a1c" stroke-width="2"/>
+  <circle cx="328" cy="230" r="3.2" fill="#c99a1c"/>
+  <line x1="328" y1="230" x2="345" y2="230" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="328" cy="326" r="3.2" fill="#c99a1c"/>
+  <line x1="328" y1="326" x2="345" y2="326" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="328" cy="422" r="3.2" fill="#c99a1c"/>
+  <line x1="328" y1="422" x2="345" y2="422" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="408" y="116" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="424" y="132" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">02</tspan></text>
+  <rect x="408" y="88" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="424" y="104" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">12</tspan></text>
+  <rect x="408" y="60" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="424" y="76" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">22</tspan></text>
+  <line x1="424" y1="141" x2="424" y2="422" stroke="#c99a1c" stroke-width="2"/>
+  <circle cx="424" cy="230" r="3.2" fill="#c99a1c"/>
+  <line x1="424" y1="230" x2="441" y2="230" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="424" cy="326" r="3.2" fill="#c99a1c"/>
+  <line x1="424" y1="326" x2="441" y2="326" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="424" cy="422" r="3.2" fill="#c99a1c"/>
+  <line x1="424" y1="422" x2="441" y2="422" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="250" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="346" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="442" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">02</tspan></text>
+  <rect x="250" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="346" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="442" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">12</tspan></text>
+  <rect x="250" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">20</tspan></text>
+  <rect x="346" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">21</tspan></text>
+  <rect x="442" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">22</tspan></text>
+  <text x="580" y="144" font-size="14" font-weight="bold" fill="#1f2933">单个乘加单元</text>
+  <rect x="620" y="200" width="180" height="180" rx="8" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <line x1="724" y1="160" x2="724" y2="278" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="580" y1="292" x2="710" y2="292" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="724" cy="292" r="13" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="724" y="297" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">×</text>
+  <circle cx="724" cy="336" r="13" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="724" y="341" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">+</text>
+  <line x1="724" y1="305" x2="724" y2="322" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <rect x="754" y="324" width="36" height="24" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="772" y="341" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">c</text>
+  <line x1="737" y1="336" x2="753" y2="336" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <polyline points="772,348 772,366 724,366 724,350" fill="none" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="732" y="220" font-size="13" font-weight="bold" fill="#4a7bd0">a</text>
+  <text x="632" y="284" font-size="13" font-weight="bold" fill="#c99a1c">b</text>
+  <text x="732" y="180" font-size="12" fill="#52606d">整行共用</text>
+  <text x="614" y="284" font-size="12" fill="#52606d" text-anchor="end">整列共用</text>
+  <text x="32" y="512" font-size="13" fill="#52606d">实心圆点是连线分叉：同一拍内，a 送到一整行，b 送到一整列。c 是累加器，结果留在其中。</text>
+</svg>

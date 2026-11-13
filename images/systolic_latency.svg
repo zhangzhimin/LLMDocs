@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" width="900" height="530" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrowA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4a7bd0"/></marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c99a1c"/></marker>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#52606d"/></marker>
+  </defs>
+  <rect width="900" height="530" fill="#ffffff"/>
+  <text x="32" y="34" font-size="16" font-weight="bold" fill="#1f2933">脉动阵列</text>
+  <text x="228" y="193" font-size="13" fill="#52606d" text-anchor="end">A：第 m 行晚 m 拍进入</text>
+  <text x="250" y="120" font-size="13" fill="#52606d" text-anchor="end">B：第 n 列晚 n 拍进入</text>
+  <rect x="196" y="203" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="212" y="220" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="160" y="203" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="176" y="220" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="124" y="203" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="140" y="220" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">02</tspan></text>
+  <line x1="229" y1="216" x2="249" y2="216" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="310" y1="216" x2="323" y2="216" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="333" y1="216" x2="345" y2="216" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="323" y="211" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="406" y1="216" x2="419" y2="216" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="429" y1="216" x2="441" y2="216" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="419" y="211" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="196" y="299" width="32" height="26" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="160" y="299" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="176" y="316" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="124" y="299" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="140" y="316" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="88" y="299" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="104" y="316" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">12</tspan></text>
+  <line x1="229" y1="312" x2="249" y2="312" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="310" y1="312" x2="323" y2="312" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="333" y1="312" x2="345" y2="312" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="323" y="307" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="406" y1="312" x2="419" y2="312" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="429" y1="312" x2="441" y2="312" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="419" y="307" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="196" y="395" width="32" height="26" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="160" y="395" width="32" height="26" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="124" y="395" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="140" y="412" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">20</tspan></text>
+  <rect x="88" y="395" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="104" y="412" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">21</tspan></text>
+  <rect x="52" y="395" width="32" height="26" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="68" y="412" font-size="12" fill="#1f2933" text-anchor="middle">a<tspan font-size="9" dy="3">22</tspan></text>
+  <line x1="229" y1="408" x2="249" y2="408" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="310" y1="408" x2="323" y2="408" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="333" y1="408" x2="345" y2="408" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="323" y="403" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="406" y1="408" x2="419" y2="408" stroke="#4a7bd0" stroke-width="2"/>
+  <line x1="429" y1="408" x2="441" y2="408" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <rect x="419" y="403" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="264" y="140" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="280" y="156" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="264" y="112" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="280" y="128" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="264" y="84" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="280" y="100" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">20</tspan></text>
+  <line x1="280" y1="165" x2="280" y2="185" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <line x1="280" y1="246" x2="280" y2="259" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="280" y1="269" x2="280" y2="281" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="275" y="259" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="280" y1="342" x2="280" y2="355" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="280" y1="365" x2="280" y2="377" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="275" y="355" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="280" y1="440" x2="280" y2="462" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="280" y="480" font-size="12" fill="#52606d" text-anchor="middle">结果</text>
+  <rect x="360" y="140" width="32" height="24" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="360" y="112" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="376" y="128" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="360" y="84" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="376" y="100" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="360" y="56" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="376" y="72" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">21</tspan></text>
+  <line x1="376" y1="165" x2="376" y2="185" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <line x1="376" y1="246" x2="376" y2="259" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="376" y1="269" x2="376" y2="281" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="371" y="259" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="376" y1="342" x2="376" y2="355" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="376" y1="365" x2="376" y2="377" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="371" y="355" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="376" y1="440" x2="376" y2="462" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="376" y="480" font-size="12" fill="#52606d" text-anchor="middle">结果</text>
+  <rect x="456" y="140" width="32" height="24" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="456" y="112" width="32" height="24" rx="4" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="456" y="84" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="472" y="100" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">02</tspan></text>
+  <rect x="456" y="56" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="472" y="72" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">12</tspan></text>
+  <rect x="456" y="28" width="32" height="24" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="472" y="44" font-size="12" fill="#1f2933" text-anchor="middle">b<tspan font-size="9" dy="3">22</tspan></text>
+  <line x1="472" y1="165" x2="472" y2="185" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <line x1="472" y1="246" x2="472" y2="259" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="472" y1="269" x2="472" y2="281" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="467" y="259" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="472" y1="342" x2="472" y2="355" stroke="#c99a1c" stroke-width="2"/>
+  <line x1="472" y1="365" x2="472" y2="377" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="467" y="355" width="10" height="10" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="472" y1="440" x2="472" y2="462" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="472" y="480" font-size="12" fill="#52606d" text-anchor="middle">结果</text>
+  <rect x="250" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">00</tspan></text>
+  <rect x="346" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">01</tspan></text>
+  <rect x="442" y="186" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="209" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="218" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="232" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">02</tspan></text>
+  <rect x="250" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">10</tspan></text>
+  <rect x="346" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">11</tspan></text>
+  <rect x="442" y="282" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="305" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="314" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="328" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">12</tspan></text>
+  <rect x="250" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="280" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="262" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="280" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">20</tspan></text>
+  <rect x="346" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="376" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="358" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="376" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">21</tspan></text>
+  <rect x="442" y="378" width="60" height="60" rx="6" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="472" y="401" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">×+</text>
+  <rect x="454" y="410" width="36" height="20" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.2"/>
+  <text x="472" y="424" font-size="12" fill="#1f2933" text-anchor="middle">c<tspan font-size="9" dy="3">22</tspan></text>
+  <text x="580" y="144" font-size="14" font-weight="bold" fill="#1f2933">单个乘加单元</text>
+  <rect x="620" y="200" width="180" height="180" rx="8" fill="#cfe8a8" stroke="#4d7c0f" stroke-width="1.5"/>
+  <line x1="580" y1="246" x2="775" y2="246" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="792" y1="246" x2="836" y2="246" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <line x1="666" y1="160" x2="666" y2="355" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <line x1="666" y1="372" x2="666" y2="416" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <rect x="776" y="238" width="16" height="16" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="658" y="356" width="16" height="16" rx="1.5" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="724" cy="246" r="3.2" fill="#4a7bd0"/>
+  <line x1="724" y1="246" x2="724" y2="278" stroke="#4a7bd0" stroke-width="2" marker-end="url(#arrowA)"/>
+  <circle cx="666" cy="292" r="3.2" fill="#c99a1c"/>
+  <line x1="666" y1="292" x2="710" y2="292" stroke="#c99a1c" stroke-width="2" marker-end="url(#arrowB)"/>
+  <circle cx="724" cy="292" r="13" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="724" y="297" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">×</text>
+  <circle cx="724" cy="336" r="13" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="724" y="341" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">+</text>
+  <line x1="724" y1="305" x2="724" y2="322" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <rect x="754" y="324" width="36" height="24" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <text x="772" y="341" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">c</text>
+  <line x1="737" y1="336" x2="753" y2="336" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <polyline points="772,348 772,366 724,366 724,350" fill="none" stroke="#52606d" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="632" y="238" font-size="13" font-weight="bold" fill="#4a7bd0">a</text>
+  <text x="674" y="218" font-size="13" font-weight="bold" fill="#c99a1c">b</text>
+  <text x="614" y="238" font-size="12" fill="#52606d" text-anchor="end">来自左邻</text>
+  <text x="806" y="238" font-size="12" fill="#52606d">传给右邻</text>
+  <text x="674" y="180" font-size="12" fill="#52606d">来自上邻</text>
+  <text x="674" y="404" font-size="12" fill="#52606d">传给下邻</text>
+  <text x="32" y="512" font-size="13" fill="#52606d">虚线格是为错拍插入的空拍。小方块是寄存器，操作数每拍只向右或向下传一格。c 是累加器。</text>
+</svg>

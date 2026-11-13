@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" width="960" height="390" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606d"/>
+    </marker>
+  </defs>
+  <rect width="960" height="390" fill="#ffffff"/>
+  <text x="32" y="30" font-size="16" font-weight="bold" fill="#1f2933">Tensor Core 的组织方式</text>
+
+  <rect x="20" y="50" width="300" height="318" rx="10" fill="#f8fafc" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="36" y="78" font-size="14" font-weight="bold" fill="#1f2933">内嵌在 CPU core 里</text>
+  <text x="304" y="78" font-size="12" font-weight="bold" fill="#d9822b" text-anchor="end">过渡方案</text>
+  <rect x="40" y="98" width="260" height="250" rx="8" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="54" y="122" font-size="13" font-weight="bold" fill="#1f2933">CPU Core</text>
+  <rect x="166" y="254" width="120" height="80" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="226" y="299" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">Tensor Core</text>
+
+  <rect x="332" y="50" width="296" height="318" rx="10" fill="#f8fafc" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="348" y="78" font-size="14" font-weight="bold" fill="#1f2933">独立于 CUDA Core</text>
+  <text x="612" y="78" font-size="12" font-weight="bold" fill="#4a7bd0" text-anchor="end">Nvidia</text>
+  <rect x="352" y="98" width="256" height="250" rx="8" fill="#f4f9ee" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="366" y="122" font-size="13" font-weight="bold" fill="#1f2933">SM</text>
+  <rect x="366" y="138" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="391" y="151" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="391" y="163" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="422" y="138" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="447" y="151" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="447" y="163" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="366" y="176" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="391" y="189" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="391" y="201" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="422" y="176" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="447" y="189" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="447" y="201" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="366" y="214" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="391" y="227" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="391" y="239" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="422" y="214" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="447" y="227" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="447" y="239" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="366" y="252" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="391" y="265" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="391" y="277" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="422" y="252" width="50" height="32" rx="4" fill="#e8f0fe" stroke="#4a7bd0"/>
+  <text x="447" y="265" font-size="9" fill="#1f2933" text-anchor="middle">CUDA</text>
+  <text x="447" y="277" font-size="9" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="488" y="140" width="104" height="150" rx="6" fill="#eaf5e0" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="540" y="206" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">Tensor</text>
+  <text x="540" y="226" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">Core</text>
+
+  <rect x="640" y="50" width="296" height="318" rx="10" fill="#f8fafc" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="656" y="78" font-size="14" font-weight="bold" fill="#1f2933">独立存在</text>
+  <text x="920" y="78" font-size="12" font-weight="bold" fill="#4d7c0f" text-anchor="end">CXPU</text>
+  <rect x="656" y="98" width="88" height="150" rx="8" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="700" y="178" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">CPU</text>
+  <rect x="756" y="98" width="164" height="150" rx="8" fill="#f4f9ee" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="768" y="118" font-size="12" font-weight="bold" fill="#1f2933">XPU</text>
+  <rect x="768" y="126" width="68" height="40" rx="4" fill="#eaf5e0" stroke="#6a9a1f"/>
+  <text x="802" y="142" font-size="11" fill="#1f2933" text-anchor="middle">Tensor</text>
+  <text x="802" y="156" font-size="11" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="842" y="126" width="68" height="40" rx="4" fill="#eaf5e0" stroke="#6a9a1f"/>
+  <text x="876" y="142" font-size="11" fill="#1f2933" text-anchor="middle">Tensor</text>
+  <text x="876" y="156" font-size="11" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="768" y="172" width="68" height="40" rx="4" fill="#eaf5e0" stroke="#6a9a1f"/>
+  <text x="802" y="188" font-size="11" fill="#1f2933" text-anchor="middle">Tensor</text>
+  <text x="802" y="202" font-size="11" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="842" y="172" width="68" height="40" rx="4" fill="#eaf5e0" stroke="#6a9a1f"/>
+  <text x="876" y="188" font-size="11" fill="#1f2933" text-anchor="middle">Tensor</text>
+  <text x="876" y="202" font-size="11" fill="#1f2933" text-anchor="middle">Core</text>
+  <rect x="656" y="262" width="264" height="36" rx="6" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="788" y="285" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">HBM</text>
+  <line x1="700" y1="248" x2="700" y2="260" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="838" y1="248" x2="838" y2="260" stroke="#52606d" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606d"/>
+    </marker>
+    <marker id="arrowS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606d"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="420" fill="#ffffff"/>
+
+  <!-- 芯片（封装） -->
+  <rect x="72" y="20" width="868" height="380" rx="10" fill="none" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="88" y="44" font-size="14" font-weight="bold" fill="#1f2933">CXPU</text>
+  <text x="924" y="44" font-size="11.5" fill="#52606d" text-anchor="end">实线：数据　虚线：控制</text>
+
+  <!-- HBM：CPU 部分与所有 Block 共用 -->
+  <rect x="88" y="56" width="836" height="44" rx="8" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="506" y="83" font-size="14" font-weight="bold" fill="#1f2933" text-anchor="middle">HBM</text>
+
+  <!-- CPU 部分 -->
+  <rect x="88" y="126" width="208" height="258" rx="8" fill="#f3f7fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="100" y="148" font-size="13" font-weight="bold" fill="#1f2933">CPU 部分</text>
+
+  <g fill="#c9dcfb" stroke="#2f5fb3" stroke-width="1.5">
+    <rect x="100" y="156" width="90" height="58" rx="6"/>
+    <rect x="196" y="156" width="90" height="58" rx="6"/>
+    <rect x="100" y="220" width="90" height="58" rx="6"/>
+    <rect x="196" y="220" width="90" height="58" rx="6"/>
+  </g>
+  <g font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">
+    <text x="145" y="178">大核</text>
+    <text x="241" y="178">大核</text>
+    <text x="145" y="238">大核</text>
+    <text x="241" y="242">大核</text>
+  </g>
+  <g font-size="11.5" fill="#1f2933" text-anchor="middle">
+    <text x="145" y="198">运行系统</text>
+    <text x="241" y="198">编译程序</text>
+    <text x="241" y="262">XPU 控制</text>
+  </g>
+  <g font-size="10.5" fill="#1f2933" text-anchor="middle">
+    <text x="145" y="254">XPU Hybrid</text>
+    <text x="145" y="268">Runtime</text>
+  </g>
+
+  <g fill="#ffffff" stroke="#4a7bd0">
+    <rect x="100" y="288" width="42" height="22" rx="4"/>
+    <rect x="148" y="288" width="42" height="22" rx="4"/>
+    <rect x="196" y="288" width="42" height="22" rx="4"/>
+    <rect x="244" y="288" width="42" height="22" rx="4"/>
+    <rect x="100" y="314" width="42" height="22" rx="4"/>
+    <rect x="148" y="314" width="42" height="22" rx="4"/>
+    <rect x="196" y="314" width="42" height="22" rx="4"/>
+    <rect x="244" y="314" width="42" height="22" rx="4"/>
+  </g>
+  <g font-size="11" fill="#52606d" text-anchor="middle">
+    <text x="121" y="303">小核</text><text x="169" y="303">小核</text><text x="217" y="303">小核</text><text x="265" y="303">小核</text>
+    <text x="121" y="329">小核</text><text x="169" y="329">小核</text><text x="217" y="329">小核</text><text x="265" y="329">小核</text>
+  </g>
+  <text x="192" y="356" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">众多小核</text>
+  <text x="192" y="374" font-size="11" fill="#52606d" text-anchor="middle">接收请求 · 处理数据 · 通用逻辑</text>
+
+  <!-- CPU 部分与 HBM -->
+  <line x1="192" y1="124" x2="192" y2="102" stroke="#52606d" stroke-width="2" marker-start="url(#arrowS)" marker-end="url(#arrowS)"/>
+
+  <!-- CPU 控制 XPU -->
+  <line x1="298" y1="249" x2="334" y2="249" stroke="#52606d" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+  <text x="316" y="239" font-size="12" fill="#1f2933" text-anchor="middle">控制</text>
+
+  <!-- XPU 部分 -->
+  <rect x="336" y="126" width="588" height="258" rx="8" fill="#f4f9ee" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="348" y="148" font-size="13" font-weight="bold" fill="#1f2933">XPU 部分</text>
+
+  <!-- Block 1 -->
+  <rect x="348" y="158" width="180" height="214" rx="6" fill="#ffffff" stroke="#b7cf94"/>
+  <text x="438" y="176" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">Block</text>
+  <rect x="358" y="184" width="160" height="26" rx="5" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="438" y="202" font-size="12" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <g fill="#eaf5e0" stroke="#6a9a1f">
+    <rect x="358" y="218" width="76" height="40" rx="4"/><rect x="442" y="218" width="76" height="40" rx="4"/>
+    <rect x="358" y="264" width="76" height="40" rx="4"/><rect x="442" y="264" width="76" height="40" rx="4"/>
+  </g>
+  <g fill="#fdebc8" stroke="#6a9a1f">
+    <path d="M358,236 V222 a4,4 0 0 1 4,-4 H430 a4,4 0 0 1 4,4 V236 Z"/><path d="M442,236 V222 a4,4 0 0 1 4,-4 H514 a4,4 0 0 1 4,4 V236 Z"/>
+    <path d="M358,282 V268 a4,4 0 0 1 4,-4 H430 a4,4 0 0 1 4,4 V282 Z"/><path d="M442,282 V268 a4,4 0 0 1 4,-4 H514 a4,4 0 0 1 4,4 V282 Z"/>
+  </g>
+  <g font-size="9.5" fill="#1f2933" text-anchor="middle">
+    <text x="396" y="231">Tile Registers</text><text x="480" y="231">Tile Registers</text>
+    <text x="396" y="277">Tile Registers</text><text x="480" y="277">Tile Registers</text>
+  </g>
+  <g font-size="11" fill="#1f2933" text-anchor="middle">
+    <text x="396" y="251">Tensor Core</text><text x="480" y="251">Tensor Core</text>
+    <text x="396" y="297">Tensor Core</text><text x="480" y="297">Tensor Core</text>
+  </g>
+  <rect x="358" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="396" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="442" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="480" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="358" y="340" width="160" height="26" rx="4" fill="#ece6f7" stroke="#7d5fb8" stroke-width="1.5"/>
+  <text x="366" y="358" font-size="11" font-weight="bold" fill="#1f2933">Vector Core</text>
+  <text x="510" y="358" font-size="10.5" fill="#52606d" text-anchor="end">elementwise</text>
+
+  <!-- Block 2 -->
+  <rect x="540" y="158" width="180" height="214" rx="6" fill="#ffffff" stroke="#b7cf94"/>
+  <text x="630" y="176" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">Block</text>
+  <rect x="550" y="184" width="160" height="26" rx="5" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="630" y="202" font-size="12" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <g fill="#eaf5e0" stroke="#6a9a1f">
+    <rect x="550" y="218" width="76" height="40" rx="4"/><rect x="634" y="218" width="76" height="40" rx="4"/>
+    <rect x="550" y="264" width="76" height="40" rx="4"/><rect x="634" y="264" width="76" height="40" rx="4"/>
+  </g>
+  <g fill="#fdebc8" stroke="#6a9a1f">
+    <path d="M550,236 V222 a4,4 0 0 1 4,-4 H622 a4,4 0 0 1 4,4 V236 Z"/><path d="M634,236 V222 a4,4 0 0 1 4,-4 H706 a4,4 0 0 1 4,4 V236 Z"/>
+    <path d="M550,282 V268 a4,4 0 0 1 4,-4 H622 a4,4 0 0 1 4,4 V282 Z"/><path d="M634,282 V268 a4,4 0 0 1 4,-4 H706 a4,4 0 0 1 4,4 V282 Z"/>
+  </g>
+  <g font-size="9.5" fill="#1f2933" text-anchor="middle">
+    <text x="588" y="231">Tile Registers</text><text x="672" y="231">Tile Registers</text>
+    <text x="588" y="277">Tile Registers</text><text x="672" y="277">Tile Registers</text>
+  </g>
+  <g font-size="11" fill="#1f2933" text-anchor="middle">
+    <text x="588" y="251">Tensor Core</text><text x="672" y="251">Tensor Core</text>
+    <text x="588" y="297">Tensor Core</text><text x="672" y="297">Tensor Core</text>
+  </g>
+  <rect x="550" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="588" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="634" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="672" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="550" y="340" width="160" height="26" rx="4" fill="#ece6f7" stroke="#7d5fb8" stroke-width="1.5"/>
+  <text x="558" y="358" font-size="11" font-weight="bold" fill="#1f2933">Vector Core</text>
+  <text x="702" y="358" font-size="10.5" fill="#52606d" text-anchor="end">elementwise</text>
+
+  <!-- Block 3 -->
+  <rect x="732" y="158" width="180" height="214" rx="6" fill="#ffffff" stroke="#b7cf94"/>
+  <text x="822" y="176" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">Block</text>
+  <rect x="742" y="184" width="160" height="26" rx="5" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="822" y="202" font-size="12" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <g fill="#eaf5e0" stroke="#6a9a1f">
+    <rect x="742" y="218" width="76" height="40" rx="4"/><rect x="826" y="218" width="76" height="40" rx="4"/>
+    <rect x="742" y="264" width="76" height="40" rx="4"/><rect x="826" y="264" width="76" height="40" rx="4"/>
+  </g>
+  <g fill="#fdebc8" stroke="#6a9a1f">
+    <path d="M742,236 V222 a4,4 0 0 1 4,-4 H814 a4,4 0 0 1 4,4 V236 Z"/><path d="M826,236 V222 a4,4 0 0 1 4,-4 H898 a4,4 0 0 1 4,4 V236 Z"/>
+    <path d="M742,282 V268 a4,4 0 0 1 4,-4 H814 a4,4 0 0 1 4,4 V282 Z"/><path d="M826,282 V268 a4,4 0 0 1 4,-4 H898 a4,4 0 0 1 4,4 V282 Z"/>
+  </g>
+  <g font-size="9.5" fill="#1f2933" text-anchor="middle">
+    <text x="780" y="231">Tile Registers</text><text x="864" y="231">Tile Registers</text>
+    <text x="780" y="277">Tile Registers</text><text x="864" y="277">Tile Registers</text>
+  </g>
+  <g font-size="11" fill="#1f2933" text-anchor="middle">
+    <text x="780" y="251">Tensor Core</text><text x="864" y="251">Tensor Core</text>
+    <text x="780" y="297">Tensor Core</text><text x="864" y="297">Tensor Core</text>
+  </g>
+  <rect x="742" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="780" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="826" y="310" width="76" height="26" rx="4" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="864" y="328" font-size="11" font-weight="bold" fill="#1f2933" text-anchor="middle">Thread Core</text>
+  <rect x="742" y="340" width="160" height="26" rx="4" fill="#ece6f7" stroke="#7d5fb8" stroke-width="1.5"/>
+  <text x="750" y="358" font-size="11" font-weight="bold" fill="#1f2933">Vector Core</text>
+  <text x="894" y="358" font-size="10.5" fill="#52606d" text-anchor="end">elementwise</text>
+
+  <!-- SRAM 与 HBM：DMA -->
+  <line x1="498" y1="182" x2="498" y2="102" stroke="#52606d" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="690" y1="182" x2="690" y2="102" stroke="#52606d" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="882" y1="182" x2="882" y2="102" stroke="#52606d" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <g font-size="11" font-weight="bold" fill="#1f2933">
+    <text x="506" y="118">DMA</text>
+    <text x="698" y="118">DMA</text>
+    <text x="890" y="118">DMA</text>
+  </g>
+</svg>

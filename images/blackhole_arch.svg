@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700"
+     font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606d"/>
+    </marker>
+  </defs>
+  <rect width="960" height="700" fill="#ffffff"/>
+
+  <text x="32" y="34" font-size="18" font-weight="bold" fill="#1f2933">Tenstorrent Blackhole</text>
+  <text x="928" y="34" font-size="12" fill="#52606d" text-anchor="end">满血卡 p150</text>
+
+  <rect x="32" y="50" width="896" height="48" rx="8" fill="#fde8d0" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="480" y="70" font-size="15" font-weight="bold" fill="#1f2933" text-anchor="middle">GDDR6</text>
+  <text x="480" y="88" font-size="12" fill="#52606d" text-anchor="middle">最高 32 GB · 512 GB/s · DRAM tile 只是控制器的端口</text>
+
+  <!-- 芯片 -->
+  <rect x="32" y="114" width="896" height="248" rx="10" fill="#f8fafc" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="48" y="138" font-size="14" font-weight="bold" fill="#1f2933">芯片</text>
+
+  <rect x="48" y="152" width="250" height="112" rx="6" fill="#ffffff" stroke="#c5ced6" stroke-width="1.5"/>
+  <text x="64" y="174" font-size="13" font-weight="bold" fill="#1f2933">两条单向 NoC</text>
+  <text x="64" y="198" font-size="12" fill="#1f2933">NoC 0　向右、向下, 读 GDDR</text>
+  <text x="64" y="220" font-size="12" fill="#1f2933">NoC 1　向左、向上, 写 GDDR</text>
+  <text x="64" y="246" font-size="12" fill="#52606d">两条同时工作, 读写分开</text>
+
+  <g fill="#cfe8a8" stroke="#4d7c0f">
+    <rect x="322" y="160" width="78" height="32" rx="4"/>
+    <rect x="408" y="160" width="78" height="32" rx="4"/>
+    <rect x="494" y="160" width="78" height="32" rx="4"/>
+    <rect x="322" y="200" width="78" height="32" rx="4"/>
+    <rect x="408" y="200" width="78" height="32" rx="4"/>
+    <rect x="494" y="200" width="78" height="32" rx="4"/>
+  </g>
+  <g font-size="12" fill="#1f2933" text-anchor="middle">
+    <text x="361" y="181">Tensix</text><text x="447" y="181">Tensix</text><text x="533" y="181">Tensix</text>
+    <text x="361" y="221">Tensix</text><text x="447" y="221">Tensix</text><text x="533" y="221">Tensix</text>
+  </g>
+  <text x="451" y="256" font-size="12" fill="#52606d" text-anchor="middle">120 个 Tensix · 片上 SRAM 共 180 MB</text>
+
+  <rect x="620" y="152" width="284" height="44" rx="6" fill="#e8f0fe" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="762" y="170" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">16 个 Big RISC-V</text>
+  <text x="762" y="188" font-size="11" fill="#52606d" text-anchor="middle">SiFive X280 · 4 组 · 可运行 Linux</text>
+
+  <rect x="620" y="204" width="136" height="52" rx="6" fill="#ffffff" stroke="#c5ced6" stroke-width="1.5"/>
+  <text x="688" y="225" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">PCIe 5.0 x16</text>
+  <text x="688" y="243" font-size="11" fill="#52606d" text-anchor="middle">连接主机</text>
+
+  <rect x="768" y="204" width="136" height="52" rx="6" fill="#ffffff" stroke="#c5ced6" stroke-width="1.5"/>
+  <text x="836" y="225" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">Ethernet</text>
+  <text x="836" y="243" font-size="11" fill="#52606d" text-anchor="middle">4×800G 卡间互联</text>
+
+  <text x="48" y="292" font-size="12" fill="#52606d">网格上还有 ARC 管理核. 存储没有 cache, 1.5 MB 的 L1 是每核一块可寻址的 SRAM.</text>
+  <text x="48" y="314" font-size="12" fill="#52606d">大核、Tensix、DRAM、以太网都挂在同一张 NoC 上.</text>
+  <text x="48" y="344" font-size="12" fill="#52606d">p100 会屏蔽一部分 Tensix 和一组 GDDR, 以太网也不打开.</text>
+
+  <!-- 一个 Tensix -->
+  <rect x="32" y="378" width="896" height="292" rx="10" fill="#f4f9ee" stroke="#6a9a1f" stroke-width="1.5"/>
+  <text x="48" y="404" font-size="14" font-weight="bold" fill="#1f2933">一个 Tensix</text>
+  <text x="160" y="404" font-size="12" fill="#52606d">5 个 32 位 Baby RISC-V 只发命令, 矩阵和向量由旁边的引擎完成</text>
+
+  <g fill="#e8f0fe" stroke="#4a7bd0">
+    <rect x="48" y="422" width="160" height="40" rx="5"/>
+    <rect x="220" y="422" width="160" height="40" rx="5"/>
+    <rect x="392" y="422" width="160" height="40" rx="5"/>
+    <rect x="564" y="422" width="160" height="40" rx="5"/>
+    <rect x="736" y="422" width="168" height="40" rx="5"/>
+  </g>
+  <g font-size="12" fill="#1f2933" text-anchor="middle">
+    <text x="128" y="440" font-weight="bold">NCRISC</text>
+    <text x="128" y="456" font-size="11" fill="#52606d">读</text>
+    <text x="300" y="440" font-weight="bold">TRISC0</text>
+    <text x="300" y="456" font-size="11" fill="#52606d">拆包</text>
+    <text x="472" y="440" font-weight="bold">TRISC1</text>
+    <text x="472" y="456" font-size="11" fill="#52606d">发计算命令</text>
+    <text x="644" y="440" font-weight="bold">TRISC2</text>
+    <text x="644" y="456" font-size="11" fill="#52606d">打包</text>
+    <text x="820" y="440" font-weight="bold">BRISC</text>
+    <text x="820" y="456" font-size="11" fill="#52606d">写</text>
+  </g>
+
+  <!-- 数据通路, 箭头画在框之间 -->
+  <rect x="48" y="500" width="118" height="64" rx="6" fill="#eef2f6" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="107" y="526" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">NoC 0</text>
+  <text x="107" y="546" font-size="11" fill="#52606d" text-anchor="middle">从 GDDR 读入</text>
+
+  <rect x="198" y="500" width="150" height="64" rx="6" fill="#fff4d6" stroke="#c99a1c" stroke-width="1.5"/>
+  <text x="273" y="526" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">SRAM</text>
+  <text x="273" y="546" font-size="11" fill="#52606d" text-anchor="middle">1.5 MB 环形缓冲</text>
+
+  <rect x="380" y="500" width="118" height="64" rx="6" fill="#ffffff" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="439" y="526" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">拆包</text>
+  <text x="439" y="546" font-size="11" fill="#52606d" text-anchor="middle">送入 srcA / srcB</text>
+
+  <rect x="530" y="488" width="168" height="88" rx="6" fill="#ffffff" stroke="#4d7c0f" stroke-width="1.5"/>
+  <rect x="542" y="500" width="68" height="64" rx="4" fill="#cfe8a8" stroke="#4d7c0f"/>
+  <text x="576" y="528" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">FPU</text>
+  <text x="576" y="546" font-size="10" fill="#52606d" text-anchor="middle">矩阵</text>
+  <rect x="618" y="500" width="68" height="64" rx="4" fill="#ece6f7" stroke="#7d5fb8"/>
+  <text x="652" y="528" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">SFPU</text>
+  <text x="652" y="546" font-size="10" fill="#52606d" text-anchor="middle">向量</text>
+
+  <rect x="730" y="500" width="90" height="64" rx="6" fill="#ffffff" stroke="#4a7bd0" stroke-width="1.5"/>
+  <text x="775" y="526" font-size="13" font-weight="bold" fill="#1f2933" text-anchor="middle">打包</text>
+  <text x="775" y="546" font-size="11" fill="#52606d" text-anchor="middle">结果出 Dst</text>
+
+  <rect x="848" y="500" width="64" height="64" rx="6" fill="#eef2f6" stroke="#9aa5b1" stroke-width="1.5"/>
+  <text x="880" y="528" font-size="12" font-weight="bold" fill="#1f2933" text-anchor="middle">NoC 1</text>
+  <text x="880" y="546" font-size="11" fill="#52606d" text-anchor="middle">写回</text>
+
+  <g stroke="#52606d" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+    <line x1="166" y1="532" x2="194" y2="532"/>
+    <line x1="348" y1="532" x2="376" y2="532"/>
+    <line x1="498" y1="532" x2="526" y2="532"/>
+    <line x1="698" y1="532" x2="726" y2="532"/>
+    <line x1="820" y1="532" x2="844" y2="532"/>
+  </g>
+
+  <text x="48" y="612" font-size="12" fill="#1f2933">FPU 做矩阵乘, 输入是 FP8、FP16、BF16、TF32 和 BLOCKFP. SFPU 做 FP32 向量和超越函数, 数据从 Dst 寄存器来.</text>
+  <text x="48" y="636" font-size="12" fill="#52606d">srcA、srcB 双缓冲, 计算和拆包可以重叠. 一个 tile 是 32×32.</text>
+  <text x="48" y="660" font-size="12" fill="#52606d">NCRISC 负责把 GDDR 的数据搬进 SRAM, BRISC 负责把 SRAM 的结果搬出去.</text>
+</svg>
